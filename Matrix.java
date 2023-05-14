@@ -2,7 +2,7 @@
 // Ryan Kimberlin, Adam B, _, _ , _
 // 05/09/23
 
-public abstract class Matrix {
+public abstract class Matrix { // shouldn't matrix not store any data?
     protected int rows;
     protected int columns;
     protected double[][] data;
