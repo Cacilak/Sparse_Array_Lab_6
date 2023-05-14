@@ -20,7 +20,9 @@ public abstract class Matrix {
     } //-- Set rows and columns
     // this program will take an array and store the data in a linked list without storing the zeros.
 
-    public abstract double get(int row, int col);
+    public abstract double get(int row, int col){
+        return this.data[row][col];
+    }
     
     public abstract void set(int row, int col, double value){
         this.data[row][col] = value;  
