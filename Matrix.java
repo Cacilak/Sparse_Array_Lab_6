@@ -10,7 +10,7 @@ public abstract class Matrix {
     public Matrix(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
-        this.data = new double[rows][colums];
+        this.data = new double[rows][columns];
     } //-- Set rows and columns
     
     public Matrix(double[][] data) {
