@@ -2,14 +2,16 @@ public class Node {
 
     // Attributes
 
-    private String data; // data that the node holds
+    private int location; // x or y chord depending on if used as collumn or row.
+    private double data; // data that the node holds
     private Node next; // used to link/point to the next node
     private Node last; // point to previous node
+    private Node side; // point to side, only applies to collum nodes
 
 
     // Constructor
 
-    Node(String data) {
+    Node(double data) {
         this.data = data;
         this.next = null;
         this.last = null;
@@ -17,8 +19,12 @@ public class Node {
 
 
     // Getters and Setters
+    
+    public void setLocation(int n){
+        this.location = n;
+    }
 
-    public void setData(String data) {
+    public void setData(double data) {
         this.data = data;
     }
 
