@@ -11,10 +11,12 @@ public class Node {
 
     // Constructor
 
-    Node(double data) {
+    Node(int loaciton, double data) { //set data to null for rows, set side to null for collumns, set up distinct constructors for collumns and rows in the list class.
+        this.location = location;
         this.data = data;
         this.next = null;
         this.last = null;
+        this.side = null;
     }
 
 
@@ -22,6 +24,18 @@ public class Node {
     
     public void setLocation(int n){
         this.location = n;
+    }
+    
+    public int getLocation(){
+        return this.location;
+    }
+    
+    public Node getSide(){
+        return this.side;
+    }
+    
+    public Node setSide(Node side){
+        this.side = side;
     }
 
     public void setData(double data) {
