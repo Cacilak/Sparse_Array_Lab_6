@@ -13,7 +13,7 @@ public abstract class Matrix {
         this.data = new double[rows][colums];
     } //-- Set rows and columns
     
-    public Matrix(double data[][]) {
+    public Matrix(double[][] data) {
         this.data = data;
         this.columns = data[0].length;
         this.rows = data.length;
