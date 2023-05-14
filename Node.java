@@ -73,43 +73,44 @@ public class Node {
 
         // Main
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 
         // Create new nodes
-        Node n1 = new Node("people");
-        Node n2 = new Node("coal");
-        Node n3 = new Node("rocks");
-        Node n4 = new Node("dogs");
+//        Node n1 = new Node("people");
+//        Node n2 = new Node("coal");
+//        Node n3 = new Node("rocks");
+//        Node n4 = new Node("dogs");
 
         // Link the nodes together
-        n1.setNext(n2);
-        n2.setNext(n3);
-        n3.setNext(n4);
+//        n1.setNext(n2);
+//        n2.setNext(n3);
+//        n3.setNext(n4);
         // n3 is the end of the list, so we leave its 'next' null
         // when a node's next is null, thats how we know its the last node in the list
 
-        n4.setLast(n3);
-        n3.setLast(n2);
-        n2.setLast(n1);
+//        n4.setLast(n3);
+//        n3.setLast(n2);
+//        n2.setLast(n1);
 
         //System.out.println(n1.data);
         //System.out.println(n1.next.data);
         //System.out.println(n1.next.next.data);
 
-        Node anyNode; // can be used to represent any node
-        anyNode = n1;
+//        Node anyNode; // can be used to represent any node
+//        anyNode = n1;
 
-        while(anyNode != null){ // while were not after the end of the list
-            System.out.println(anyNode.data);
-            anyNode = anyNode.next; // set anyNode to be next node in the list
-        }
+//        while(anyNode != null){ // while were not after the end of the list
+//            System.out.println(anyNode.data);
+//            anyNode = anyNode.next; // set anyNode to be next node in the list
+//        }
         
-        anyNode = n4;
+//        anyNode = n4;
 
-        while(anyNode != null){ // while were not after the end of the list
-            System.out.println(anyNode.data);
-            anyNode = anyNode.last; // set anyNode to be next node in the list
-        }
+//        while(anyNode != null){ // while were not after the end of the list
+//            System.out.println(anyNode.data);
+//            anyNode = anyNode.last; // set anyNode to be next node in the list
+//        }
 
-    }
+//    }
+    
 }
