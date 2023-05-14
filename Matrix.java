@@ -5,11 +5,12 @@
 public abstract class Matrix {
     protected int rows;
     protected int columns;
-    protected double data[][];
+    protected double[][] data;
 
     public Matrix(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
+        this.data = new double[rows][colums];
     } //-- Set rows and columns
     
     public Matrix(double data[][]) {
